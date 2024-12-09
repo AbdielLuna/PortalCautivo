@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Conexión</title>
+    <title>Autenticación de Acceso</title>
+    <script>
+        function redirigirFormulario() {
+            window.location.href = "https://forms.gle/MVd4McGE1dgh6ZxC7";
+        }
+
+        // Esto podría ser más avanzado con una validación de cookie o alguna otra verificación.
+        /*function validacionCompleta() {
+            window.location.href = "https://mi-pagina-de-validacion.com/confirmacion";
+        }*/
+    </script>
 </head>
 <body>
-    <h1>Formulario de Acceso WiFi</h1>
-    <form action="tu-script.php" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <h1>Bienvenido a la Red de Invitados</h1>
+    <p>Para acceder a internet, por favor complete el siguiente formulario:</p>
+    <button onclick="redirigirFormulario()">Ir al Formulario</button>
+
+    <!-- Si quieres hacer una validación adicional, puedes colocar un botón para confirmar --
+    <p>Si ya completaste el formulario, por favor haz clic en el siguiente enlace:</p>
+    <button onclick="validacionCompleta()">Confirmar que completaste el formulario</button>-->
 </body>
 </html>
+
